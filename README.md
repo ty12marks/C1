@@ -57,7 +57,7 @@ List supported Rubies and their current stable versions:
 
 Updates then list the supported Rubies and their current stable versions:
 
-    $ ruby-install --latest
+    $ ruby-install --update
 
 Install the current stable version of Ruby:
 
@@ -65,7 +65,7 @@ Install the current stable version of Ruby:
 
 Install the latest version of Ruby:
 
-    $ ruby-install --latest ruby
+    $ ruby-install --update ruby
 
 Install a stable version of Ruby:
 
