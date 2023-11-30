@@ -48,7 +48,7 @@ function configure_ruby()
 	case "$package_manager" in
 		brew)
 			opt_dir="$(brew --prefix readline):$(brew --prefix libyaml):$(brew --prefix gdbm)"
-			openssl_dir="$(brew --prefix "openssl@$openssl_version")"
+			openssl_dir="$(brew --prefix "openssl@${openssl_version}")"
 			;;
 		port)
 			opt_dir="/opt/local"
