@@ -16,7 +16,7 @@ ruby_url="${ruby_url:-$ruby_mirror/$ruby_version_family/$ruby_archive}"
 if [[ "$package_manager" == "brew" ]]; then
 	case "$ruby_version_family" in
 		2.*|3.0)	openssl_version="1.1" ;;
-		*)		openssl_version="3.0" ;;
+		*)		openssl_version="3" ;;
 	esac
 fi
 
