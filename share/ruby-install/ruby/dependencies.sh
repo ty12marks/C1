@@ -15,7 +15,7 @@ case "$package_manager" in
 			libffi-dev
 		)
 		;;
-	dnf)
+	dnf|yum)
 		ruby_dependencies=(
 			xz
 			gcc
@@ -28,41 +28,6 @@ case "$package_manager" in
 			readline-devel
 			ncurses-devel
 			libffi-devel
-		)
-		;;
-	yum)
-		ruby_dependencies=(
-			xz
-			gcc
-			automake
-			bison
-			zlib-devel
-			libyaml-devel
-			openssl-devel
-			gdbm-devel
-			readline-devel
-			ncurses-devel
-			libffi-devel
-		)
-		;;
-	port)
-		ruby_dependencies=(
-			automake
-			bison
-			readline
-			libyaml
-			gdbm
-			libffi
-		)
-		;;
-	brew)
-		ruby_dependencies=(
-			automake
-			bison
-			readline
-			libyaml
-			gdbm
-			libffi
 		)
 		;;
 	pacman)
@@ -93,6 +58,16 @@ case "$package_manager" in
 			readline-devel
 			ncurses-devel
 			libffi-devel
+		)
+		;;
+	brew|port)
+		ruby_dependencies=(
+			automake
+			bison
+			readline
+			libyaml
+			gdbm
+			libffi
 		)
 		;;
 	pkg)
